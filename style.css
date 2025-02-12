@@ -1,0 +1,68 @@
+:root {
+    --wrapper-color: #384454;
+    --display-background-color: black;
+    --button-color: #384454;
+    --button-text-color: #a5c7f3;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    height: 100vh;
+    margin: 0px;
+    background-color: var(--wrapper-color);
+}
+
+.wrapper {
+    height: 90%;
+    background-color: var(--wrapper-color);
+    width: 20rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: #222933 10px 10px 50px, #5d708b -10px -10px 50px;
+}
+
+.display {
+    height: 25%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    border-radius: 1rem;
+    font-size: 5rem;
+    color: var(--button-text-color);
+    margin: 1rem;
+    user-select: none;
+}
+
+.buttonsArea {
+    height: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem;
+    background-color: var(--button-color);
+    border-radius: 0.5rem;
+    color: var(--button-text-color);
+    aspect-ratio: 1;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: #222933 1px 1px 5px, #5d708b -1px -1px 5px;
+    transition: box-shadow ease 0.2s;
+}
+
+.button:hover {
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.25);
+}
+
+.cButton {
+    background-color: rgb(221, 70, 0);
+    color: black;
+    border: rgb(104, 57, 0) 2px solid;
+}
